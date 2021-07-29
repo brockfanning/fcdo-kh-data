@@ -3,12 +3,9 @@ name: Deploy to staging
 on:
   push:
     branches:
-      - develop
+      - main
     paths-ignore:
       - 'meta/**'
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0 1 * * *'
 
 jobs:
   build:
@@ -36,12 +33,3 @@ jobs:
         BRANCH: gh-pages
         FOLDER: _site
         CLEAN: true
-    - name: Waiting 4 minutes for staging data deployment
-      run: |
-        sleep 240
-    - name: Rebuild site
-      run: |
-        curl -X POST https://api.github.com/repos/sdg-cambodia/site/dispatches \
-        -H "Accept: application/vnd.github.everest-preview+json" \
-        -H "Authorization: token ${{secrets.token}}" \
-        --data '{"event_type": "rebuild-staging"}'
