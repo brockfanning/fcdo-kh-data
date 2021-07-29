@@ -1,0 +1,17 @@
+Disaggregation,en,Number of indicators,Number of values
+AGE,Age,17,21
+COMPOSITE_BREAKDOWN,Composite breakdown,2,8
+EDUCATION_LEV,Education level,4,4
+FREQ,Frequency of observation,138,1
+INCOME_WEALTH_QUANTILE,Income or wealth quantile,6,7
+NATURE,Nature of data points,138,1
+OBS_STATUS,Observation status,138,1
+REF_AREA,Reference area,138,34
+REPORTING_TYPE,Reporting type,138,1
+SERIES,SDG Series,138,141
+SEX,Sex,21,2
+SOURCE_DETAIL,Source details,137,57
+TIME_DETAIL,Time period details,138,12
+UNIT_MEASURE,Unit of measure,138,14
+UNIT_MULT,Unit multiplier,138,3
+URBANISATION,Degree of urbanisation,15,3

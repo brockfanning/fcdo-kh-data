@@ -1,0 +1,35 @@
+Value,en,Disaggregation combinations using this value,Number of indicators
+KH_AGG_KH02_KH24,Battambang and Pailin,6,6
+KH_AGG_KH07_KH18_KH23,"Kampot, Preah Sihanouk and Kep",6,6
+KH_AGG_KH07_KH23,Kampot and Kep,6,6
+KH_AGG_KH10_KH13_KH19,"Kratie, Preah Vihear and Stung Treng",6,6
+KH_AGG_KH11_KH16,Mondul Kiri and Ratanak Kiri,6,6
+KH_AGG_KH13_KH19,Preah Vihear and Stung Treng,6,6
+KH_AGG_KH22_KH17,Otdar Meanchey and Siem Reap,6,6
+KH_KH09_KH18,Koh Kong and Preah Sihanouk,6,6
+KH,Cambodia,276,138
+KH01,Banteay Meanchey,19,13
+KH02,Battambang,14,8
+KH03,Kampong Cham,19,13
+KH04,Kampong Chhnang,19,13
+KH05,Kampong Speu,19,13
+KH06,Kampong Thom,19,13
+KH07,Kampot,14,8
+KH08,Kandal,19,13
+KH09,Koh Kong,19,13
+KH10,Kratie,19,13
+KH11,Mondul Kiri,14,8
+KH12,Phnom Penh,20,14
+KH13,Preah Vihear,14,8
+KH14,Prey Veng,19,13
+KH15,Pursat,19,13
+KH16,Ratanak Kiri,14,8
+KH17,Siemreap,19,13
+KH18,Preah Sihanouk,14,8
+KH19,Stung Treng,14,8
+KH20,Svay Rieng,19,13
+KH21,Takeo,19,13
+KH22,Oddar Meanchey,19,13
+KH23,Kep,14,8
+KH24,Pailin,14,8
+KH25,Tboung Khmum,8,4

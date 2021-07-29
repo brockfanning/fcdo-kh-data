@@ -1,0 +1,1416 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>Disaggregation: SERIES - SDG data build documentation</title>
+
+            <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/open-sdg/open-sdg-table@0.4.0/open-sdg-table.min.css">
+            <style>
+                .btn-primary {
+                    background-color: #00703c;
+                    padding: 8px 10px 7px;
+                    border: 2px solid transparent;
+                    border-radius: 0;
+                    color: #fff;
+                    box-shadow: 0 2px 0 #002d18;
+                    text-decoration: none;
+                }
+                .btn-primary:visited {
+                    color: #fff;
+                }
+                .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active {
+                    background-color: #005a30;
+                    text-decoration: none;
+                    border: 2px solid transparent;
+                }
+                .btn-primary:focus:not(:active):not(:hover) {
+                    border-color: #fd0;
+                    color: #0b0c0c;
+                    background-color: #fd0;
+                    box-shadow: 0 2px 0 #0b0c0c;
+                }
+                a {
+                    color: #1D70B8;
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: #003078;
+                }
+                a:visited {
+                    color: #4c2c92;
+                }
+                .download-info {
+                    margin-left: 12px;
+                }
+                .table-striped tbody tr:nth-of-type(2n+1) {
+                    background-color: #f3f2f1;
+                }
+            </style>
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="/fcdo-kh-data/index.html">SDG data build documentation</a>
+                </div>
+            </nav>
+            <main role="main">
+                <div class="container">
+                    <h1 style="margin:20px 0">Disaggregation: SERIES</h1>
+                    <div>
+                        
+        <div role="navigation" aria-describedby="contents-heading">
+            <h2 id="contents-heading">On this page</h2>
+            <ul>
+                <li><a href="#values-used">Values used in disaggregation</a></li>
+                <li><a href="#indicators-using">Indicators using disaggregation</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 id="values-used" tabindex="-1">Values used in disaggregation</h2>
+            
+        <div class="my-3">
+            <a href="values--disaggregation--series.csv" role="button" class="btn btn-primary" aria-describedby="values--disaggregation--series">Download CSV of values used in this disaggregation</a>
+            <div id="values--disaggregation--series" class="download-info">Size: 14.8 kB</div>
+        </div>
+        
+            
+                <div class="total-rows">
+                    Total rows: <span class="total">141</span>
+                </div>
+                <table border="1" class="dataframe table table-striped table-bordered" id="values-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Value</th>
+      <th>en</th>
+      <th>Disaggregation combinations using this value</th>
+      <th>Number of indicators</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="disaggregation-value--ag-lnd-frst.html">AG_LND_FRST</a></td>
+      <td>15.1.1 Proportion of land areas covered by forest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--ag-lnd-frstprct.html">AG_LND_FRSTPRCT</a></td>
+      <td>15.2.1 Percentage of sustainable forest protection and management</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--dc-oda-bdvl.html">DC_ODA_BDVL</a></td>
+      <td>15.b.1 Official development assistance for conservation and sustainable use of biodiversity and ecosystems</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--dc-tof-agrl.html">DC_TOF_AGRL</a></td>
+      <td>2.a.1 Total Official flows (official development assistance + other official flows) to agriculture sector (as % of GDP)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--dc-tof-infral.html">DC_TOF_INFRAL</a></td>
+      <td>9.a.1 Total official international support (official development assistance plus other official flows) to infrastructure</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--dc-trf-totl.html">DC_TRF_TOTL</a></td>
+      <td>10.b.1.  Total official development assistance for Cambodia</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--eg-acs-elec.html">EG_ACS_ELEC</a></td>
+      <td>7.1.1 Proportion of population with access to electricity</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--eg-egy-clean.html">EG_EGY_CLEAN</a></td>
+      <td>7.1.2 Proportion of population with primary reliance on clean fuels and technology</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--en-scp-fshgdp.html">EN_SCP_FSHGDP</a></td>
+      <td>14.7.1 Value of sustainable fisheries production as a percentage of GDP</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--en-wwt-wwds.html">EN_WWT_WWDS</a></td>
+      <td>6.3.1 Proportion of wastewater safely treated</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--er-grf-plntstor.html">ER_GRF_PLNTSTOR</a></td>
+      <td>2.5.1 Number of plant genetic resources for food and agriculture secured​ in policy, strategy and either medium or long-term conservation facilities</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--gb-xpd-rsdv.html">GB_XPD_RSDV</a></td>
+      <td>9.5.1 Research and development expenditure as a proportion of GDP</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--it-mob-2gntwk.html">IT_MOB_2GNTWK</a></td>
+      <td>9.c.1 Proportion of population covered by a mobile network, by technology</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--it-net-bbnd.html">IT_NET_BBND</a></td>
+      <td>17.6.1 Percentage of population connect to Fixed Internet broadband subscriptions, by speed</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--it-use-ii99.html">IT_USE_II99</a></td>
+      <td>17.8.1 Internet users</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-010301-01.html">N_KH_010301_01</a></td>
+      <td>1.3.1 Proportion of the poor and the vulnerable received social emergency relief services</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-010401-01.html">N_KH_010401_01</a></td>
+      <td>1.4.1 Percentage of total members of registered community fisheries and forestry with tenure rights to fisheries and forestry resources management through effective community registration and development</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-020301-01.html">N_KH_020301_01</a></td>
+      <td>2.3.1 Value of agricultural production per unit of labor engaged in agriculture (farming, animal husbandry and fisheries)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-020401-01.html">N_KH_020401_01</a></td>
+      <td>2.4.1 Sustainable Agricultural Land Productivity</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-020502-01.html">N_KH_020502_01</a></td>
+      <td>2.5.2 Percentage of households in community in protected area improving their livelihood through receiving the benefits from NTFPs, integrated agriculture, eco-tourism within the protect areas</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030101-01.html">N_KH_030101_01</a></td>
+      <td>3.1.1 Life expectancy at birth</td>
+      <td>81</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030102-01.html">N_KH_030102_01</a></td>
+      <td>3.1.2 Total fertility rate</td>
+      <td>35</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030502-01.html">N_KH_030502_01</a></td>
+      <td>3.5.2 Percentage of adult population with depression received treatment</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030601-01.html">N_KH_030601_01</a></td>
+      <td>3.6.1 Percentage of people with drug used received treatment</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030602-01.html">N_KH_030602_01</a></td>
+      <td>3.6.2 Prevalence of alcohol use among among population above 18 years old</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030801-01.html">N_KH_030801_01</a></td>
+      <td>3.8.1 Proportion of women of reproductive age (aged 15–49 years) who have their need for family planning satisfied with modern methods</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030802-01.html">N_KH_030802_01</a></td>
+      <td>3.8.2 Teenage pregnancy 15 -19 years</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030901-01.html">N_KH_030901_01</a></td>
+      <td>3.9.1 Percentage of the population covered by social health protection systemsi.e. Health Equity Funds and Social Health Insurance schemes</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030902-01.html">N_KH_030902_01</a></td>
+      <td>3.9.2 Government Current expenditure on health as % of GDP)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-030a02-01.html">N_KH_030a02_01</a></td>
+      <td>3.a.2 Prevalence of tobacco use among youth aged 13-15</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-04010101-01.html">N_KH_04010101_01</a></td>
+      <td>4.1.1.1 Completion rate Grade 6</td>
+      <td>87</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-04010102-01.html">N_KH_04010102_01</a></td>
+      <td>4.1.1.2 Completion rate Grade 9</td>
+      <td>87</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040201-01.html">N_KH_040201_01</a></td>
+      <td>4.2.1 Proportion of grade 1 student passed through all ECE programs</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040301-01.html">N_KH_040301_01</a></td>
+      <td>4.3.1 Gross enrolment rate in tertiary education (aged 18-21 years) by sex</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040302-01.html">N_KH_040302_01</a></td>
+      <td>4.3.2 Gross enrolment rate in technical-vocational education programmes (15- to 24-year-olds)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040501-01.html">N_KH_040501_01</a></td>
+      <td>4.5.1 Gender parity index in lower secondary education</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040502-01.html">N_KH_040502_01</a></td>
+      <td>4.5.2 Gender parity index in upper secondary education</td>
+      <td>28</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040601-01.html">N_KH_040601_01</a></td>
+      <td>4.6.1 Literacy rate by age group</td>
+      <td>33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040c02-01.html">N_KH_040c02_01</a></td>
+      <td>4.c.2 Percentage of pre school teachers qualified according to national standards</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040c03-01.html">N_KH_040c03_01</a></td>
+      <td>4.c.3 Percentage of primary teachers qualified according to national standards</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040c04-01.html">N_KH_040c04_01</a></td>
+      <td>4.c.4 Percentage of secondary teachers qualified according to national standards</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-040c05-01.html">N_KH_040c05_01</a></td>
+      <td>4.c.5Percentage of teachers who received in-service training</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050101-01.html">N_KH_050101_01</a></td>
+      <td>5.1.1 Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‑discrimination on the basis of sex</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050401-01.html">N_KH_050401_01</a></td>
+      <td>5.4.1. Number of legal and policy measures to address and recognize work-life balance, and unpaid care and domestic works, and promote women's increased access to decent employment</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050502-01.html">N_KH_050502_01</a></td>
+      <td>5.5.2 Proportion of under secretary of state who are women</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050502-02.html">N_KH_050502_02</a></td>
+      <td>5.5.2 Proportion of secretary of state who are women</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050503-01.html">N_KH_050503_01</a></td>
+      <td>5.5.3 Proportion of seats held by women in commune councils</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050602-01.html">N_KH_050602_01</a></td>
+      <td>5.6.2 The number of laws, policies, plans and legal regulations that ensure that all women have access to information , education and sexual and reproductive health services</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050c01-01.html">N_KH_050c01_01</a></td>
+      <td>5.c.1 Number of institutions with a system to track and allocate budget to promote  gender equality and empower women</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-050c02-01.html">N_KH_050c02_01</a></td>
+      <td>5.c.2 Number of line Ministries, Line Agencies have development and Implement Gender Mainstreaming Strategic  Plan</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-060401-01.html">N_KH_060401_01</a></td>
+      <td>6.4.1 By 2025, all Cambodian people living in urban areas have access to clean water sustainably with quality and affordable price</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-060a01-01.html">N_KH_060a01_01</a></td>
+      <td>6.a.1 Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-070201-02.html">N_KH_070201_02</a></td>
+      <td>7.2.1 Renewable energy consumption</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-070301-01.html">N_KH_070301_01</a></td>
+      <td>7.3.1 Proption of primary energy with GDP</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-08020201-01.html">N_KH_08020201_01</a></td>
+      <td>8.2.2.1 Growth rate of online company registration</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-08020202-01.html">N_KH_08020202_01</a></td>
+      <td>8.2.2.2 Growth rate of online trade mark registration</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-08020203-01.html">N_KH_08020203_01</a></td>
+      <td>8.2.2.3 Growth Rate of online issuing the Cerficate of Origin</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-08020301-01.html">N_KH_08020301_01</a></td>
+      <td>8.2.3.1 All kinds of products both goods and services that have been processed or developed and have been included in OVOP Movement</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-08020302-01.html">N_KH_08020302_01</a></td>
+      <td>8.2.3.2 Number of types products both goods and services that have been processed or developed with OVOP standeard criteria</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-080902-01.html">N_KH_080902_01</a></td>
+      <td>8.9.2  Number of employees in tourism industries as a proportion of total employees in all sectors</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-080a01-01.html">N_KH_080a01_01</a></td>
+      <td>8.a.1 Aid for Trade Commitments and Disbursements</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-090101-01.html">N_KH_090101_01</a></td>
+      <td>9.1.1 Freight volumes of ports and railway</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-090102-01.html">N_KH_090102_01</a></td>
+      <td>9.1.2 Air transport, international passengers carried</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-090102-02.html">N_KH_090102_02</a></td>
+      <td>9.1.2 Air transport, domestic passengers carried</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-090103-01.html">N_KH_090103_01</a></td>
+      <td>9.1.3 Air transport, international freight</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-090103-02.html">N_KH_090103_02</a></td>
+      <td>9.1.3 Air transport, domestic freight</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-100401-01.html">N_KH_100401_01</a></td>
+      <td>10.4.1 Civil Servants Retirees and invalid people who receive pension benefits</td>
+      <td>25</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-100a01-01.html">N_KH_100a01_01</a></td>
+      <td>10.a.1 Number of Trade Related Agreement with other countries</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-110601-01.html">N_KH_110601_01</a></td>
+      <td>11.6.1 Amount of urban solid waste regularly collected and with adequate final discharge</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-110602-01.html">N_KH_110602_01</a></td>
+      <td>11.6.2 Percentage of the deduction plastic bag used</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-110603-01.html">N_KH_110603_01</a></td>
+      <td>11.6.3 Percentage of the solid wasted will be segregate by technical guidance</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-110604-01.html">N_KH_110604_01</a></td>
+      <td>11.6.4 Annual average of the parameters of CO, NO2, SO2, TSP, PM2.5 and PM10</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-120401-01.html">N_KH_120401_01</a></td>
+      <td>12.4.1 Percentage of release reduction of Persistent Organic Pollutants (POPs) to the environment</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-120402-01.html">N_KH_120402_01</a></td>
+      <td>12.4.2 Percentage of release reduction of mercury (Hg) to the environment</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-120403-01.html">N_KH_120403_01</a></td>
+      <td>12.4.3 Effectiveness management of hazardous waste and biological and radioactive waste</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-120501-01.html">N_KH_120501_01</a></td>
+      <td>12.5.1 National recycling rate, tons of material recycled</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-130101-01.html">N_KH_130101_01</a></td>
+      <td>13.1.1 Percentage of communes/Sangkats vulnerable to climate change</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-130201-01.html">N_KH_130201_01</a></td>
+      <td>13.2.1 Pecentage of Green-House Gas emission through reduced activities when comparing to the projection (scenario) of usual gas emission</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-130202-01.html">N_KH_130202_01</a></td>
+      <td>13.2.2 Percentage of increase in public expenditure for climate change</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-130301-01.html">N_KH_130301_01</a></td>
+      <td>13.3.1 Intitution level that prepared for response to Climate Change indicated as percentage of institutional capacities mainstreamed on 5 components of Climate Change</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-130302-01.html">N_KH_130302_01</a></td>
+      <td>13.3.2 Percentage of households (farming, animal raising, fish raising, and fishing) and local community forestry members participated workshops and received training on climate change</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-140101-01.html">N_KH_140101_01</a></td>
+      <td>14.1.1 Percentage of the reduction of the sea pollution by the conservation activities</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-140202-01.html">N_KH_140202_01</a></td>
+      <td>14.2.1 Key ecosystem function and service of marine and coast area maintained and restore as necessary</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-140b01-01.html">N_KH_140b01_01</a></td>
+      <td>14.b.1 Percentage of marine resources  which  small-scale fisheries farmers harvested and sold in a stable marke</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-141501-01.html">N_KH_141501_01</a></td>
+      <td>14.5.1 Percentage of coverage of marine and inland fisheries conservation areas protected</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-141502-01.html">N_KH_141502_01</a></td>
+      <td>14.2.2 Percentage of degraded freshwater flooded forests and mangrove forests (ha) that has been transplanted and protected</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150102-01.html">N_KH_150102_01</a></td>
+      <td>15.1.2 Percentage of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150103-01.html">N_KH_150103_01</a></td>
+      <td>15.1.3 Forest areas and ecosystems sustainably utilized</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150301-01.html">N_KH_150301_01</a></td>
+      <td>15.3.1 Area of forest landscape restoration for areas affected by desertification, drought and floods</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150501-01.html">N_KH_150501_01</a></td>
+      <td>15.5.1 Number of action plans forconservation of rare and endangered species of fauna and flora developed and implemented</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150701-01.html">N_KH_150701_01</a></td>
+      <td>15.7.1 Number of cases of illegal poaching and trafficking of flora and fauna decreased</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-150902-01.html">N_KH_150902_01</a></td>
+      <td>15.9.2 Number of policies, strategies and regulations on ecosystem services is established and implemented</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-160301-01.html">N_KH_160301_01</a></td>
+      <td>16.3.1 Proportion of people involved in disseminating laws</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-160701-01.html">N_KH_160701_01</a></td>
+      <td>16.7.1 Proportion of female in civil servant</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-170301-01.html">N_KH_170301_01</a></td>
+      <td>17.3.1 Official development assistance as % of GDP</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-170901-01.html">N_KH_170901_01</a></td>
+      <td>17.9.1 Total financial and technical assistance (including through North-South, South-South and triangular cooperation) committed to Cambodia</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-170902-01.html">N_KH_170902_01</a></td>
+      <td>17.9.2 Amount of ODA to Economic and Development Policy/Planning (as % of GDP)​​​ committed to Cambodia</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-171001-01.html">N_KH_171001_01</a></td>
+      <td>17.10.1 The number of commercial legal norms and standards set up to facilitate local investors and investors in trading</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-171701-01.html">N_KH_171701_01</a></td>
+      <td>17.17.1 Amount of ODA disbursed to civil society partnerships (as % of GDP)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-171802-01.html">N_KH_171802_01</a></td>
+      <td>17.18.2 Proportion of budget expenditure for implementation the National Strategy for the Development of Statistic (NSDS)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180101-01.html">N_KH_180101_01</a></td>
+      <td>18.1.1 Total cumulated areas cleared of mines/ERW</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180201-01.html">N_KH_180201_01</a></td>
+      <td>18.2.1 Number of civilian casualties from mines/ERW</td>
+      <td>26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180202-01.html">N_KH_180202_01</a></td>
+      <td>18.2.2 The number of villages contaminated by mines / ERW to receive Mine Risk Educationmessages</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180301-01.html">N_KH_180301_01</a></td>
+      <td>18.3.1 The number of mine and ERW casualties received rights promotion</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180302-01.html">N_KH_180302_01</a></td>
+      <td>18.3.2 The number of mine and ERW casualties received rehabilitation service</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--n-kh-180303-01.html">N_KH_180303_01</a></td>
+      <td>18.3.3 The number of mine and ERW casualties received emergency  and rapid response from CMAA</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--ny-gdp-pcap.html">NY_GDP_PCAP</a></td>
+      <td>8.1.1 Annual GDP growth rate at constant prices</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sd-sdg-avlb.html">SD_SDG_AVLB</a></td>
+      <td>17.18.1 Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--se-acs-h2o.html">SE_ACS_H2O</a></td>
+      <td>4.a.1 Proportion of schools with access to basic drinking water</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--se-acs-sanit.html">SE_ACS_SANIT</a></td>
+      <td>4.a.2 Proportion of schools with access to single-sex basic sanitation facilities</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--se-inf-dsbl.html">SE_INF_DSBL</a></td>
+      <td>4.a.3 Proportion of schools with access to adapted infrastructure and materials for students with disabilities</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--se-pre-partn.html">SE_PRE_PARTN</a></td>
+      <td>4.2.2 Percentage ofchildren attended all aspects of ECE</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--se-tra-grdl.html">SE_TRA_GRDL</a></td>
+      <td>4.c.1 Proportion of teachers inpre-primary, primary,  lower secondary and upper secondary education who have received pre-service or in-service training</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sg-gen-parl.html">SG_GEN_PARL</a></td>
+      <td>5.5.1 Proportion of seats held by women in legislative organs</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sg-reg-brth.html">SG_REG_BRTH</a></td>
+      <td>16.9.1 Proportion of children under 5 years of age whose births have been registered with a civil authority</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sg-reg-censusn.html">SG_REG_CENSUSN</a></td>
+      <td>17.19.1 Population Census in every 10 years</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-dth-ncom.html">SH_DTH_NCOM</a></td>
+      <td>3.5.1 Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-dyn-mort.html">SH_DYN_MORT</a></td>
+      <td>3.3.1 Under-five mortality rate (U5MR)</td>
+      <td>33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-dyn-nmrt.html">SH_DYN_NMRT</a></td>
+      <td>3.3.2 Neonatal mortality rate</td>
+      <td>43</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-fpl-infm.html">SH_FPL_INFM</a></td>
+      <td>5.6.1 Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-h2o-safe.html">SH_H2O_SAFE</a></td>
+      <td>6.1.1 Proportion of population using an improved drinking water source</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-hiv-incd.html">SH_HIV_INCD</a></td>
+      <td>3.4.1 % of new HIV infection per 1000 uninfected population</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-med-den.html">SH_MED_DEN</a></td>
+      <td>3.c.1 Ratio of physician/nurse/midwife per 1,000 population</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-prv-smok.html">SH_PRV_SMOK</a></td>
+      <td>3.a.1 Age-standardized prevalence of current tobacco use among persons aged 15 years and older</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-san-safe.html">SH_SAN_SAFE</a></td>
+      <td>6.2.1 Proportion of population using an improved sanitation facility</td>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-brtc.html">SH_STA_BRTC</a></td>
+      <td>3.2.2 Proportion of births attended by skilled health personnel</td>
+      <td>26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-malr.html">SH_STA_MALR</a></td>
+      <td>3.4.3 Malaria incidence</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-mort.html">SH_STA_MORT</a></td>
+      <td>3.2.1 Maternal mortality ratio (MMR)</td>
+      <td>25</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-stnt.html">SH_STA_STNT</a></td>
+      <td>2.2.1 Percent of children under 5 years old who are moderately or severely stunted</td>
+      <td>33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-traf.html">SH_STA_TRAF</a></td>
+      <td>3.7.1 Injury and death due to accident</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-sta-wast.html">SH_STA_WAST</a></td>
+      <td>2.2.2 Percent of children under 5 years old who are moderately or severely wasted</td>
+      <td>33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sh-tbs-incd.html">SH_TBS_INCD</a></td>
+      <td>3.4.2 Incidence of tuberculosis per 100,000 population</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--si-hei-totl.html">SI_HEI_TOTL</a></td>
+      <td>10.1.1 Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--si-pov-50mi.html">SI_POV_50MI</a></td>
+      <td>10.2.1 Proportion of people living below 50 per cent of median income</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--si-pov-nahc.html">SI_POV_NAHC</a></td>
+      <td>1.2.1 Proportion of population below national poverty line</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--si-pov-nmpi.html">SI_POV_NMPI</a></td>
+      <td>1.2.2 Proportion of children living in poverty measured by multiple dimensions according to national definitions</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sl-tlf-manf.html">SL_TLF_MANF</a></td>
+      <td>9.2.1 Number of Cambodian employees in manufacturing sector as a proportion to total employment within thecountry</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--sp-dyn-mrbf18.html">SP_DYN_MRBF18</a></td>
+      <td>5.3.1 Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--st-gdp-zs.html">ST_GDP_ZS</a></td>
+      <td>8.9.1 Tourism direct GDP as a proportion of total GDP and in growth rate</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--vc-vaw-marr.html">VC_VAW_MARR</a></td>
+      <td>5.2.1 Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--vc-vaw-nonmarr.html">VC_VAW_NONMARR</a></td>
+      <td>5.2.2 Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+            <script type="text/javascript">
+            var sdgBuild = sdgBuild || {};
+            sdgBuild.tables = sdgBuild.tables || {};
+            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--ag-lnd-frst.html\">AG_LND_FRST<\/a>","en":"15.1.1 Proportion of land areas covered by forest","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ag-lnd-frstprct.html\">AG_LND_FRSTPRCT<\/a>","en":"15.2.1 Percentage of sustainable forest protection and management","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--dc-oda-bdvl.html\">DC_ODA_BDVL<\/a>","en":"15.b.1 Official development assistance for conservation and sustainable use of biodiversity and ecosystems","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--dc-tof-agrl.html\">DC_TOF_AGRL<\/a>","en":"2.a.1 Total Official flows (official development assistance + other official flows) to agriculture sector (as % of GDP)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--dc-tof-infral.html\">DC_TOF_INFRAL<\/a>","en":"9.a.1 Total official international support (official development assistance plus other official flows) to infrastructure","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--dc-trf-totl.html\">DC_TRF_TOTL<\/a>","en":"10.b.1.  Total official development assistance for Cambodia","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--eg-acs-elec.html\">EG_ACS_ELEC<\/a>","en":"7.1.1 Proportion of population with access to electricity","Disaggregation combinations using this value":3,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--eg-egy-clean.html\">EG_EGY_CLEAN<\/a>","en":"7.1.2 Proportion of population with primary reliance on clean fuels and technology","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--en-scp-fshgdp.html\">EN_SCP_FSHGDP<\/a>","en":"14.7.1 Value of sustainable fisheries production as a percentage of GDP","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--en-wwt-wwds.html\">EN_WWT_WWDS<\/a>","en":"6.3.1 Proportion of wastewater safely treated","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--er-grf-plntstor.html\">ER_GRF_PLNTSTOR<\/a>","en":"2.5.1 Number of plant genetic resources for food and agriculture secured\u200b in policy, strategy and either medium or long-term conservation facilities","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--gb-xpd-rsdv.html\">GB_XPD_RSDV<\/a>","en":"9.5.1 Research and development expenditure as a proportion of GDP","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--it-mob-2gntwk.html\">IT_MOB_2GNTWK<\/a>","en":"9.c.1 Proportion of population covered by a mobile network, by technology","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--it-net-bbnd.html\">IT_NET_BBND<\/a>","en":"17.6.1 Percentage of population connect to Fixed Internet broadband subscriptions, by speed","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--it-use-ii99.html\">IT_USE_II99<\/a>","en":"17.8.1 Internet users","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-010301-01.html\">N_KH_010301_01<\/a>","en":"1.3.1 Proportion of the poor and the vulnerable received social emergency relief services","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-010401-01.html\">N_KH_010401_01<\/a>","en":"1.4.1 Percentage of total members of registered community fisheries and forestry with tenure rights to fisheries and forestry resources management through effective community registration and development","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-020301-01.html\">N_KH_020301_01<\/a>","en":"2.3.1 Value of agricultural production per unit of labor engaged in agriculture (farming, animal husbandry and fisheries)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-020401-01.html\">N_KH_020401_01<\/a>","en":"2.4.1 Sustainable Agricultural Land Productivity","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-020502-01.html\">N_KH_020502_01<\/a>","en":"2.5.2 Percentage of households in community in protected area improving their livelihood through receiving the benefits from NTFPs, integrated agriculture, eco-tourism within the protect areas","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030101-01.html\">N_KH_030101_01<\/a>","en":"3.1.1 Life expectancy at birth","Disaggregation combinations using this value":81,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030102-01.html\">N_KH_030102_01<\/a>","en":"3.1.2 Total fertility rate","Disaggregation combinations using this value":35,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030502-01.html\">N_KH_030502_01<\/a>","en":"3.5.2 Percentage of adult population with depression received treatment","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030601-01.html\">N_KH_030601_01<\/a>","en":"3.6.1 Percentage of people with drug used received treatment","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030602-01.html\">N_KH_030602_01<\/a>","en":"3.6.2 Prevalence of alcohol use among among population above 18 years old","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030801-01.html\">N_KH_030801_01<\/a>","en":"3.8.1 Proportion of women of reproductive age (aged 15\u201349\u00a0years) who have their need for family planning satisfied with modern methods","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030802-01.html\">N_KH_030802_01<\/a>","en":"3.8.2 Teenage pregnancy 15 -19 years","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030901-01.html\">N_KH_030901_01<\/a>","en":"3.9.1 Percentage of the population covered by social health protection systemsi.e. Health Equity Funds and Social Health Insurance schemes","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030902-01.html\">N_KH_030902_01<\/a>","en":"3.9.2 Government Current expenditure on health as % of GDP)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-030a02-01.html\">N_KH_030a02_01<\/a>","en":"3.a.2 Prevalence of tobacco use among youth aged 13-15","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-04010101-01.html\">N_KH_04010101_01<\/a>","en":"4.1.1.1 Completion rate Grade 6","Disaggregation combinations using this value":87,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-04010102-01.html\">N_KH_04010102_01<\/a>","en":"4.1.1.2 Completion rate Grade 9","Disaggregation combinations using this value":87,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040201-01.html\">N_KH_040201_01<\/a>","en":"4.2.1 Proportion of grade 1 student passed through all ECE programs","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040301-01.html\">N_KH_040301_01<\/a>","en":"4.3.1 Gross enrolment rate in tertiary education (aged 18-21 years) by sex","Disaggregation combinations using this value":3,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040302-01.html\">N_KH_040302_01<\/a>","en":"4.3.2 Gross enrolment rate in technical-vocational education programmes (15- to 24-year-olds)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040501-01.html\">N_KH_040501_01<\/a>","en":"4.5.1 Gender parity index in lower secondary education","Disaggregation combinations using this value":3,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040502-01.html\">N_KH_040502_01<\/a>","en":"4.5.2 Gender parity index in upper secondary education","Disaggregation combinations using this value":28,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040601-01.html\">N_KH_040601_01<\/a>","en":"4.6.1 Literacy rate by age group","Disaggregation combinations using this value":33,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040c02-01.html\">N_KH_040c02_01<\/a>","en":"4.c.2 Percentage of pre school teachers qualified according to national standards","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040c03-01.html\">N_KH_040c03_01<\/a>","en":"4.c.3 Percentage of primary teachers qualified according to national standards","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040c04-01.html\">N_KH_040c04_01<\/a>","en":"4.c.4 Percentage of secondary teachers qualified according to national standards","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-040c05-01.html\">N_KH_040c05_01<\/a>","en":"4.c.5Percentage of teachers who received in-service training","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050101-01.html\">N_KH_050101_01<\/a>","en":"5.1.1 Whether or not legal frameworks are in place to\u00a0promote, enforce and monitor equality and non\u2011discrimination on the basis of sex","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050401-01.html\">N_KH_050401_01<\/a>","en":"5.4.1. Number of legal and policy measures to address and recognize work-life balance, and unpaid care and domestic works, and promote women's increased access to decent employment","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050502-01.html\">N_KH_050502_01<\/a>","en":"5.5.2 Proportion of under secretary of state who are women","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050502-02.html\">N_KH_050502_02<\/a>","en":"5.5.2 Proportion of secretary of state who are women","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050503-01.html\">N_KH_050503_01<\/a>","en":"5.5.3 Proportion of seats held by women in commune councils","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050602-01.html\">N_KH_050602_01<\/a>","en":"5.6.2 The number of laws, policies, plans and legal regulations that ensure that all women have access to information , education and sexual and reproductive health services","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050c01-01.html\">N_KH_050c01_01<\/a>","en":"5.c.1 Number of institutions with a system to track and allocate budget to promote  gender equality and empower women","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-050c02-01.html\">N_KH_050c02_01<\/a>","en":"5.c.2 Number of line Ministries, Line Agencies have development and Implement Gender Mainstreaming Strategic  Plan","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-060401-01.html\">N_KH_060401_01<\/a>","en":"6.4.1 By 2025, all Cambodian people living in urban areas have access to clean water sustainably with quality and affordable price","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-060a01-01.html\">N_KH_060a01_01<\/a>","en":"6.a.1 Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-070201-02.html\">N_KH_070201_02<\/a>","en":"7.2.1 Renewable energy consumption","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-070301-01.html\">N_KH_070301_01<\/a>","en":"7.3.1 Proption of primary energy with GDP","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-08020201-01.html\">N_KH_08020201_01<\/a>","en":"8.2.2.1 Growth rate of online company registration","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-08020202-01.html\">N_KH_08020202_01<\/a>","en":"8.2.2.2 Growth rate of online trade mark registration","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-08020203-01.html\">N_KH_08020203_01<\/a>","en":"8.2.2.3 Growth Rate of online issuing the Cerficate of Origin","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-08020301-01.html\">N_KH_08020301_01<\/a>","en":"8.2.3.1 All kinds of products both goods and services that have been processed or developed and have been included in OVOP Movement","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-08020302-01.html\">N_KH_08020302_01<\/a>","en":"8.2.3.2 Number of types products both goods and services that have been processed or developed with OVOP standeard criteria","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-080902-01.html\">N_KH_080902_01<\/a>","en":"8.9.2  Number of employees in tourism industries as a proportion of total employees in all sectors","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-080a01-01.html\">N_KH_080a01_01<\/a>","en":"8.a.1 Aid for Trade Commitments and Disbursements","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-090101-01.html\">N_KH_090101_01<\/a>","en":"9.1.1 Freight volumes of ports and railway","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-090102-01.html\">N_KH_090102_01<\/a>","en":"9.1.2 Air transport, international passengers carried","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-090102-02.html\">N_KH_090102_02<\/a>","en":"9.1.2 Air transport, domestic passengers carried","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-090103-01.html\">N_KH_090103_01<\/a>","en":"9.1.3 Air transport, international freight","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-090103-02.html\">N_KH_090103_02<\/a>","en":"9.1.3 Air transport, domestic freight","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-100401-01.html\">N_KH_100401_01<\/a>","en":"10.4.1 Civil Servants Retirees and invalid people who receive pension benefits","Disaggregation combinations using this value":25,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-100a01-01.html\">N_KH_100a01_01<\/a>","en":"10.a.1 Number of Trade Related Agreement with other countries","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-110601-01.html\">N_KH_110601_01<\/a>","en":"11.6.1 Amount of urban solid waste regularly collected and with adequate final discharge","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-110602-01.html\">N_KH_110602_01<\/a>","en":"11.6.2 Percentage of the deduction plastic bag used","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-110603-01.html\">N_KH_110603_01<\/a>","en":"11.6.3 Percentage of the solid wasted will be segregate by technical guidance","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-110604-01.html\">N_KH_110604_01<\/a>","en":"11.6.4 Annual average of the parameters of CO, NO2, SO2, TSP, PM2.5 and PM10","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-120401-01.html\">N_KH_120401_01<\/a>","en":"12.4.1 Percentage of release reduction of Persistent Organic Pollutants (POPs) to the environment","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-120402-01.html\">N_KH_120402_01<\/a>","en":"12.4.2 Percentage of release reduction of mercury (Hg) to the environment","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-120403-01.html\">N_KH_120403_01<\/a>","en":"12.4.3 Effectiveness management of hazardous waste and biological and radioactive waste","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-120501-01.html\">N_KH_120501_01<\/a>","en":"12.5.1 National recycling rate, tons of material recycled","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-130101-01.html\">N_KH_130101_01<\/a>","en":"13.1.1 Percentage of communes\/Sangkats vulnerable to climate change","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-130201-01.html\">N_KH_130201_01<\/a>","en":"13.2.1 Pecentage of Green-House Gas emission through reduced activities when comparing to the projection (scenario) of usual gas emission","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-130202-01.html\">N_KH_130202_01<\/a>","en":"13.2.2 Percentage of increase in public expenditure for climate change","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-130301-01.html\">N_KH_130301_01<\/a>","en":"13.3.1 Intitution level that prepared for response to Climate Change indicated as percentage of institutional capacities mainstreamed on 5 components of Climate Change","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-130302-01.html\">N_KH_130302_01<\/a>","en":"13.3.2 Percentage of households (farming, animal raising, fish raising, and fishing) and local community forestry members participated workshops and received training on climate change","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-140101-01.html\">N_KH_140101_01<\/a>","en":"14.1.1 Percentage of the reduction of the sea pollution by the conservation activities","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-140202-01.html\">N_KH_140202_01<\/a>","en":"14.2.1 Key ecosystem function and service of marine and coast area maintained and restore as necessary","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-140b01-01.html\">N_KH_140b01_01<\/a>","en":"14.b.1 Percentage of marine resources  which  small-scale fisheries farmers harvested and sold in a stable marke","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-141501-01.html\">N_KH_141501_01<\/a>","en":"14.5.1 Percentage of coverage of marine and inland fisheries conservation areas protected","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-141502-01.html\">N_KH_141502_01<\/a>","en":"14.2.2 Percentage of degraded freshwater flooded forests and mangrove forests (ha) that has been transplanted and protected","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150102-01.html\">N_KH_150102_01<\/a>","en":"15.1.2 Percentage of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150103-01.html\">N_KH_150103_01<\/a>","en":"15.1.3 Forest areas and ecosystems sustainably utilized","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150301-01.html\">N_KH_150301_01<\/a>","en":"15.3.1 Area of forest landscape restoration for areas affected by desertification, drought and floods","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150501-01.html\">N_KH_150501_01<\/a>","en":"15.5.1 Number of action plans forconservation of rare and endangered species of fauna and flora developed and implemented","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150701-01.html\">N_KH_150701_01<\/a>","en":"15.7.1 Number of cases of illegal poaching and trafficking of flora and fauna decreased","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-150902-01.html\">N_KH_150902_01<\/a>","en":"15.9.2 Number of policies, strategies and regulations on ecosystem services is established and implemented","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-160301-01.html\">N_KH_160301_01<\/a>","en":"16.3.1 Proportion of people involved in disseminating laws","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-160701-01.html\">N_KH_160701_01<\/a>","en":"16.7.1 Proportion of female in civil servant","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-170301-01.html\">N_KH_170301_01<\/a>","en":"17.3.1 Official development assistance as % of GDP","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-170901-01.html\">N_KH_170901_01<\/a>","en":"17.9.1 Total financial and technical assistance (including through North-South, South-South and triangular cooperation) committed to Cambodia","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-170902-01.html\">N_KH_170902_01<\/a>","en":"17.9.2 Amount of ODA to Economic and Development Policy\/Planning (as % of GDP)\u200b\u200b\u200b committed to Cambodia","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-171001-01.html\">N_KH_171001_01<\/a>","en":"17.10.1 The number of commercial legal norms and standards set up to facilitate local investors and investors in trading","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-171701-01.html\">N_KH_171701_01<\/a>","en":"17.17.1 Amount of ODA disbursed to civil society partnerships (as % of GDP)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-171802-01.html\">N_KH_171802_01<\/a>","en":"17.18.2 Proportion of budget expenditure for implementation the National Strategy for the Development of Statistic (NSDS)","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180101-01.html\">N_KH_180101_01<\/a>","en":"18.1.1 Total cumulated areas cleared of mines\/ERW","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180201-01.html\">N_KH_180201_01<\/a>","en":"18.2.1 Number of civilian casualties from mines\/ERW","Disaggregation combinations using this value":26,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180202-01.html\">N_KH_180202_01<\/a>","en":"18.2.2 The number of villages contaminated by mines \/ ERW to receive Mine Risk Educationmessages","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180301-01.html\">N_KH_180301_01<\/a>","en":"18.3.1 The number of mine and ERW casualties received rights promotion","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180302-01.html\">N_KH_180302_01<\/a>","en":"18.3.2 The number of mine and ERW casualties received rehabilitation service","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--n-kh-180303-01.html\">N_KH_180303_01<\/a>","en":"18.3.3 The number of mine and ERW casualties received emergency  and rapid response from CMAA","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ny-gdp-pcap.html\">NY_GDP_PCAP<\/a>","en":"8.1.1 Annual GDP growth rate at constant prices","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sd-sdg-avlb.html\">SD_SDG_AVLB<\/a>","en":"17.18.1 Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--se-acs-h2o.html\">SE_ACS_H2O<\/a>","en":"4.a.1 Proportion of schools with access to basic drinking water","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--se-acs-sanit.html\">SE_ACS_SANIT<\/a>","en":"4.a.2 Proportion of schools with access to single-sex basic sanitation facilities","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--se-inf-dsbl.html\">SE_INF_DSBL<\/a>","en":"4.a.3 Proportion of schools with access to\u00a0adapted infrastructure and materials for students with disabilities","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--se-pre-partn.html\">SE_PRE_PARTN<\/a>","en":"4.2.2 Percentage ofchildren attended all aspects of ECE","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--se-tra-grdl.html\">SE_TRA_GRDL<\/a>","en":"4.c.1 Proportion of teachers inpre-primary, primary,  lower secondary and upper secondary education who have received pre-service or in-service training","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sg-gen-parl.html\">SG_GEN_PARL<\/a>","en":"5.5.1 Proportion of seats held by women in legislative organs","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sg-reg-brth.html\">SG_REG_BRTH<\/a>","en":"16.9.1 Proportion of children under 5 years of age whose births have been registered with a civil authority","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sg-reg-censusn.html\">SG_REG_CENSUSN<\/a>","en":"17.19.1 Population Census in every 10 years","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-dth-ncom.html\">SH_DTH_NCOM<\/a>","en":"3.5.1 Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-dyn-mort.html\">SH_DYN_MORT<\/a>","en":"3.3.1 Under-five mortality rate (U5MR)","Disaggregation combinations using this value":33,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-dyn-nmrt.html\">SH_DYN_NMRT<\/a>","en":"3.3.2 Neonatal mortality rate","Disaggregation combinations using this value":43,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-fpl-infm.html\">SH_FPL_INFM<\/a>","en":"5.6.1 Proportion of women aged 15\u201349\u00a0years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-h2o-safe.html\">SH_H2O_SAFE<\/a>","en":"6.1.1 Proportion of population using an improved drinking water source","Disaggregation combinations using this value":8,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-hiv-incd.html\">SH_HIV_INCD<\/a>","en":"3.4.1 % of new HIV infection per 1000 uninfected population","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-med-den.html\">SH_MED_DEN<\/a>","en":"3.c.1 Ratio of physician\/nurse\/midwife per 1,000 population","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-prv-smok.html\">SH_PRV_SMOK<\/a>","en":"3.a.1 Age-standardized prevalence of current tobacco use among persons aged 15\u00a0years and older","Disaggregation combinations using this value":2,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-san-safe.html\">SH_SAN_SAFE<\/a>","en":"6.2.1 Proportion of population using an improved sanitation facility","Disaggregation combinations using this value":6,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-brtc.html\">SH_STA_BRTC<\/a>","en":"3.2.2 Proportion of births attended by skilled health personnel","Disaggregation combinations using this value":26,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-malr.html\">SH_STA_MALR<\/a>","en":"3.4.3 Malaria incidence","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-mort.html\">SH_STA_MORT<\/a>","en":"3.2.1 Maternal mortality ratio (MMR)","Disaggregation combinations using this value":25,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-stnt.html\">SH_STA_STNT<\/a>","en":"2.2.1 Percent of children under 5 years old who are moderately or severely stunted","Disaggregation combinations using this value":33,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-traf.html\">SH_STA_TRAF<\/a>","en":"3.7.1 Injury and death due to accident","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-sta-wast.html\">SH_STA_WAST<\/a>","en":"2.2.2 Percent of children under 5 years old who are moderately or severely wasted","Disaggregation combinations using this value":33,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sh-tbs-incd.html\">SH_TBS_INCD<\/a>","en":"3.4.2 Incidence of tuberculosis per 100,000 population","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--si-hei-totl.html\">SI_HEI_TOTL<\/a>","en":"10.1.1 Growth rates of household expenditure or income per capita among the bottom 40\u00a0per\u00a0cent of the population and the total population","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--si-pov-50mi.html\">SI_POV_50MI<\/a>","en":"10.2.1 Proportion of people living below 50\u00a0per\u00a0cent of median income","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--si-pov-nahc.html\">SI_POV_NAHC<\/a>","en":"1.2.1 Proportion of population below national poverty line","Disaggregation combinations using this value":4,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--si-pov-nmpi.html\">SI_POV_NMPI<\/a>","en":"1.2.2 Proportion of children living in poverty measured by multiple dimensions according to national definitions","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sl-tlf-manf.html\">SL_TLF_MANF<\/a>","en":"9.2.1 Number of Cambodian employees in manufacturing sector as a proportion to total employment within thecountry","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--sp-dyn-mrbf18.html\">SP_DYN_MRBF18<\/a>","en":"5.3.1 Proportion of women aged 20\u201324\u00a0years who were married or in a union before age 15 and before age 18","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--st-gdp-zs.html\">ST_GDP_ZS<\/a>","en":"8.9.1 Tourism direct GDP as a proportion of total GDP and in growth rate","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--vc-vaw-marr.html\">VC_VAW_MARR<\/a>","en":"5.2.1 Proportion of ever-partnered women and girls aged 15\u00a0years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age","Disaggregation combinations using this value":1,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--vc-vaw-nonmarr.html\">VC_VAW_NONMARR<\/a>","en":"5.2.2 Proportion of women and girls aged 15\u00a0years and older subjected to sexual violence by persons other than an\u00a0intimate partner in the previous 12\u00a0months, by age and place of occurrence","Disaggregation combinations using this value":1,"Number of indicators":1}];
+            </script>
+            
+        </div>
+        <div>
+            <h2 id="indicators-using" tabindex="-1">Indicators using disaggregation</h2>
+            
+        <div class="my-3">
+            <a href="indicators--disaggregation--series.csv" role="button" class="btn btn-primary" aria-describedby="indicators--disaggregation--series">Download CSV of indicators using this disaggregation</a>
+            <div id="indicators--disaggregation--series" class="download-info">Size: 1.1 kB</div>
+        </div>
+        
+            
+                <div class="total-rows">
+                    Total rows: <span class="total">138</span>
+                </div>
+                <table border="1" class="dataframe table table-striped table-bordered" id="indicators-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Indicator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/1-2-1">#1-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/1-2-2">#1-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/1-3-1">#1-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/1-4-1">#1-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/10-1-1">#10-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/10-2-1">#10-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/10-4-1">#10-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/10-a-1">#10-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/10-b-1">#10-b-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/11-6-1">#11-6-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/11-6-2">#11-6-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/11-6-3">#11-6-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/11-6-4">#11-6-4</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/12-4-1">#12-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/12-4-2">#12-4-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/12-4-3">#12-4-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/12-5-1">#12-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/13-1-1">#13-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/13-2-1">#13-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/13-2-2">#13-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/13-3-1">#13-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/13-3-2">#13-3-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-1-1">#14-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-2-1">#14-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-2-2">#14-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-5-1">#14-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-7-1">#14-7-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/14-b-1">#14-b-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-1-1">#15-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-1-2">#15-1-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-1-3">#15-1-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-2-1">#15-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-3-1">#15-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-5-1">#15-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-7-1">#15-7-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-9-2">#15-9-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/15-b-1">#15-b-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/16-3-1">#16-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/16-7-1">#16-7-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/16-9-1">#16-9-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-10-1">#17-10-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-17-1">#17-17-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-18-1">#17-18-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-18-2">#17-18-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-19-1">#17-19-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-3-1">#17-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-6-1">#17-6-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-8-1">#17-8-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-9-1">#17-9-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/17-9-2">#17-9-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-1-1">#18-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-2-1">#18-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-2-2">#18-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-3-1">#18-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-3-2">#18-3-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/18-3-3">#18-3-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-2-1">#2-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-2-2">#2-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-3-1">#2-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-4-1">#2-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-5-1">#2-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-5-2">#2-5-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/2-a-1">#2-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-1-1">#3-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-1-2">#3-1-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-2-1">#3-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-2-2">#3-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-3-1">#3-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-3-2">#3-3-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-4-1">#3-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-4-2">#3-4-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-4-3">#3-4-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-5-1">#3-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-5-2">#3-5-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-6-1">#3-6-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-6-2">#3-6-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-7-1">#3-7-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-8-1">#3-8-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-8-2">#3-8-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-9-1">#3-9-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-9-2">#3-9-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-a-1">#3-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-a-2">#3-a-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/3-c-1">#3-c-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-1-1-1">#4-1-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-1-1-2">#4-1-1-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-2-1">#4-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-2-2">#4-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-3-1">#4-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-3-2">#4-3-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-5-1">#4-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-5-2">#4-5-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-6-1">#4-6-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-a-1">#4-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-a-2">#4-a-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-a-3">#4-a-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-c-1">#4-c-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-c-2">#4-c-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-c-3">#4-c-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-c-4">#4-c-4</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/4-c-5Percentage">#4-c-5Percentage</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-1-1">#5-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-2-1">#5-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-2-2">#5-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-3-1">#5-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-4-1">#5-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-5-1">#5-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-5-2">#5-5-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-5-3">#5-5-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-6-1">#5-6-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-6-2">#5-6-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-c-1">#5-c-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/5-c-2">#5-c-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/6-1-1">#6-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/6-2-1">#6-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/6-3-1">#6-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/6-4-1">#6-4-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/6-a-1">#6-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/7-1-1">#7-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/7-1-2">#7-1-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/7-2-1">#7-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/7-3-1">#7-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-1-1">#8-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-2-2-1">#8-2-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-2-2-2">#8-2-2-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-2-2-3">#8-2-2-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-2-3-1">#8-2-3-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-2-3-2">#8-2-3-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-9-1">#8-9-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-9-2">#8-9-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/8-a-1">#8-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-1-1">#9-1-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-1-2">#9-1-2</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-1-3">#9-1-3</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-2-1">#9-2-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-5-1">#9-5-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-a-1">#9-a-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://sdg-cambodia.github.io/site/9-c-1">#9-c-1</a></td>
+    </tr>
+  </tbody>
+</table>
+            <script type="text/javascript">
+            var sdgBuild = sdgBuild || {};
+            sdgBuild.tables = sdgBuild.tables || {};
+            sdgBuild.tables['indicators-table'] = [{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/1-2-1\">#1-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/1-2-2\">#1-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/1-3-1\">#1-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/1-4-1\">#1-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/10-1-1\">#10-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/10-2-1\">#10-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/10-4-1\">#10-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/10-a-1\">#10-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/10-b-1\">#10-b-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/11-6-1\">#11-6-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/11-6-2\">#11-6-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/11-6-3\">#11-6-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/11-6-4\">#11-6-4<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/12-4-1\">#12-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/12-4-2\">#12-4-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/12-4-3\">#12-4-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/12-5-1\">#12-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/13-1-1\">#13-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/13-2-1\">#13-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/13-2-2\">#13-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/13-3-1\">#13-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/13-3-2\">#13-3-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-1-1\">#14-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-2-1\">#14-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-2-2\">#14-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-5-1\">#14-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-7-1\">#14-7-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/14-b-1\">#14-b-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-1-1\">#15-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-1-2\">#15-1-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-1-3\">#15-1-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-2-1\">#15-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-3-1\">#15-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-5-1\">#15-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-7-1\">#15-7-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-9-2\">#15-9-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/15-b-1\">#15-b-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/16-3-1\">#16-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/16-7-1\">#16-7-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/16-9-1\">#16-9-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-10-1\">#17-10-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-17-1\">#17-17-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-18-1\">#17-18-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-18-2\">#17-18-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-19-1\">#17-19-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-3-1\">#17-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-6-1\">#17-6-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-8-1\">#17-8-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-9-1\">#17-9-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/17-9-2\">#17-9-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-1-1\">#18-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-2-1\">#18-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-2-2\">#18-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-3-1\">#18-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-3-2\">#18-3-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/18-3-3\">#18-3-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-2-1\">#2-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-2-2\">#2-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-3-1\">#2-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-4-1\">#2-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-5-1\">#2-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-5-2\">#2-5-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/2-a-1\">#2-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-1-1\">#3-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-1-2\">#3-1-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-2-1\">#3-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-2-2\">#3-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-3-1\">#3-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-3-2\">#3-3-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-4-1\">#3-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-4-2\">#3-4-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-4-3\">#3-4-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-5-1\">#3-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-5-2\">#3-5-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-6-1\">#3-6-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-6-2\">#3-6-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-7-1\">#3-7-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-8-1\">#3-8-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-8-2\">#3-8-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-9-1\">#3-9-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-9-2\">#3-9-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-a-1\">#3-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-a-2\">#3-a-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/3-c-1\">#3-c-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-1-1-1\">#4-1-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-1-1-2\">#4-1-1-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-2-1\">#4-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-2-2\">#4-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-3-1\">#4-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-3-2\">#4-3-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-5-1\">#4-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-5-2\">#4-5-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-6-1\">#4-6-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-a-1\">#4-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-a-2\">#4-a-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-a-3\">#4-a-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-c-1\">#4-c-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-c-2\">#4-c-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-c-3\">#4-c-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-c-4\">#4-c-4<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/4-c-5Percentage\">#4-c-5Percentage<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-1-1\">#5-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-2-1\">#5-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-2-2\">#5-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-3-1\">#5-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-4-1\">#5-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-5-1\">#5-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-5-2\">#5-5-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-5-3\">#5-5-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-6-1\">#5-6-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-6-2\">#5-6-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-c-1\">#5-c-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/5-c-2\">#5-c-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/6-1-1\">#6-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/6-2-1\">#6-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/6-3-1\">#6-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/6-4-1\">#6-4-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/6-a-1\">#6-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/7-1-1\">#7-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/7-1-2\">#7-1-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/7-2-1\">#7-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/7-3-1\">#7-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-1-1\">#8-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-2-2-1\">#8-2-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-2-2-2\">#8-2-2-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-2-2-3\">#8-2-2-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-2-3-1\">#8-2-3-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-2-3-2\">#8-2-3-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-9-1\">#8-9-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-9-2\">#8-9-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/8-a-1\">#8-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-1-1\">#9-1-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-1-2\">#9-1-2<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-1-3\">#9-1-3<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-2-1\">#9-2-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-5-1\">#9-5-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-a-1\">#9-a-1<\/a>"},{"Indicator":"<a href=\"https:\/\/sdg-cambodia.github.io\/site\/9-c-1\">#9-c-1<\/a>"}];
+            </script>
+            
+        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/open-sdg/open-sdg-table@0.4.0/open-sdg-table.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script>
+            if (typeof sdgBuild !== 'undefined' && sdgBuild.tables) {
+                var tableIds = Object.keys(sdgBuild.tables);
+                for (var i = 0; i < tableIds.length; i++) {
+                    var tableId = tableIds[i];
+                    $('#' + tableId).openSdgTable(sdgBuild.tables[tableId]).find('td').each(function() {
+                        if (!isNaN($(this).text())) {
+                            $(this).css('text-align', 'right');
+                        }
+                    })
+                }
+            }
+            </script>
+        </html>
+        

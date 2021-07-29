@@ -1,0 +1,8 @@
+Value,en,Disaggregation combinations using this value,Number of indicators
+B40,Bottom 40%,1,1
+B50,Bottom 50%,1,1
+Q1,Quintile 1 (poorest),5,4
+Q2,Quintile 2,5,4
+Q3,Quintile 3,5,4
+Q4,Quintile 4,5,4
+Q5,Quintile 5 (richest),5,4
